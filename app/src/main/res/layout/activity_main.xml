@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3C693">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="373dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="KO Production's"
+            android:textColor="#000000"
+            android:textSize="33dp"
+            android:textStyle="bold"
+            app:fontFamily="@font/shojumaru" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="65dp"
+                android:src="@drawable/fireforce" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Anime"
+                android:textColor="#FF00"
+                android:textSize="50dp"
+                android:textStyle="bold"
+                app:fontFamily="@font/shojumaru" />
+
+            <ImageView
+                android:layout_width="108dp"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:src="@drawable/fireforce" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="25dp"
+            android:text="Enclycopedia"
+            android:textColor="#FF0000"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            app:fontFamily="@font/shojumaru" />
+
+
+        <EditText
+            android:id="@+id/search_bar"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="19dp"
+            android:backgroundTint="#000"
+            android:textColorHint="#0A0000" />
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:background="#C09B66"
+            android:onClick="fetchData"
+            android:padding="20dp"
+            android:text="Search"
+            android:textColor="#030000" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:textColor="#FF0000"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:fontFamily="@font/shojumaru" />
+
+        <ImageView
+            android:id="@+id/poster"
+            android:layout_width="200dp"
+            android:layout_height="163dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/episodes"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="20dp"
+            app:fontFamily="@font/shojumaru" />
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="20dp"
+            app:fontFamily="@font/shojumaru" />
+
+        <TextView
+            android:id="@+id/plot_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="20dp"
+            app:fontFamily="@font/shojumaru" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:id="@+id/left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:onClick="previous"
+                android:text="Previous"
+                android:textColor="#FF0000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:fontFamily="@font/shojumaru" />
+
+            <TextView
+                android:id="@+id/right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:onClick="next"
+                android:text="Next"
+                android:textColor="#FF0000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:fontFamily="@font/shojumaru" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
